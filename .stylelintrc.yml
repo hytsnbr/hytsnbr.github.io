@@ -1,0 +1,10 @@
+extends:
+  - stylelint-config-standard
+  - stylelint-config-recommended-scss
+  - stylelint-config-recommended-vue
+
+rules:
+  value-keyword-case:
+    - lower # 下のルールを変更させるためにあえて記述（エラー回避のため）
+    - camelCaseSvgKeywords: # SVG関連のプロパティが全部小文字になるのを回避
+        - true

@@ -1,0 +1,28 @@
+env:
+  browser: true
+  es2021: true
+extends:
+  - eslint:recommended
+  - plugin:vue/vue3-recommended
+  - "@vue/typescript/recommended"
+  - prettier
+overrides: []
+parser: "vue-eslint-parser"
+parserOptions:
+  parser: "@typescript-eslint/parser"
+  ecmaVersion: latest
+  sourceType: module
+  project: "./tsconfig.json"
+  extraFileExtensions:
+    - ".vue"
+ignorePatterns:
+  - postcss.config.cjs
+  - vite.config.ts
+plugins:
+  - vue
+  - "@typescript-eslint"
+  - prettier
+rules:
+  vue/component-name-in-template-casing:
+    - "error"
+    - "PascalCase"

@@ -1,0 +1,52 @@
+{
+  "name": "vue-test",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "packageManager": "pnpm@8.6.1",
+  "scripts": {
+    "preinstall": "husky install && husky set .husky/pre-commit 'pnpm lint-staged'",
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "pnpm build && vite preview",
+    "lint:script": "eslint --fix src/*.{ts,vue} && eslint --fix src/**/*.{ts,vue}",
+    "lint:style": "stylelint src/**/*.{css,scss,vue}",
+    "lint": "pnpm lint:script && pnpm lint:style",
+    "format": "prettier -w src/*.{ts,vue} && prettier -w src/**/*.{ts,vue}",
+    "fix": "pnpm format && pnpm lint"
+  },
+  "dependencies": {
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "@typescript-eslint/eslint-plugin": "^5.59.8",
+    "@typescript-eslint/parser": "^5.59.8",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "@vue/eslint-config-prettier": "^7.1.0",
+    "@vue/eslint-config-typescript": "^11.0.3",
+    "autoprefixer": "^10.4.14",
+    "css-declaration-sorter": "^7.0.0",
+    "eslint": "^8.41.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-vue": "^9.14.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "postcss": "^8.4.24",
+    "postcss-html": "^1.5.0",
+    "postcss-sort-media-queries": "^5.2.0",
+    "prettier": "^2.8.8",
+    "sass": "^1.62.1",
+    "stylelint": "^15.6.2",
+    "stylelint-config-recommended-scss": "^12.0.0",
+    "stylelint-config-recommended-vue": "^1.4.0",
+    "stylelint-config-standard": "^33.0.0",
+    "typescript": "*",
+    "vite": "^4.3.9",
+    "vue-tsc": "^1.4.2"
+  },
+  "lint-staged": {
+    "*.{ts,vue}": "pnpm lint:script",
+    "*.{css,scss,vue}": "pnpm lint:style"
+  }
+}

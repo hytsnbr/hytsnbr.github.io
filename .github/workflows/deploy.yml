@@ -1,0 +1,69 @@
+# Github Pages デプロイ ワークフロー
+name: Deploy to Github Pages
+
+on:
+  # 実行対象ブランチ
+  push:
+    branches: 
+      - "main"
+
+  # Actions タブから手動でワークフローを実行できるように設定
+  workflow_dispatch:
+
+# GITHUB_TOKEN のパーミッションを設定し GitHub Pages へのデプロイを許可
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 同時に複数のデプロイが走らないようにする
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  # ビルド
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v2
+
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          # dist ディレクトリを公開対象に設定する
+          path: "./dist"
+
+  # デプロイ
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1

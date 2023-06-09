@@ -6,7 +6,11 @@ extends:
   - plugin:vue/vue3-recommended
   - "@vue/typescript/recommended"
   - prettier
-overrides: []
+overrides:
+  - files:
+      - "*.config.{ts,js}"
+    extends:
+      - "@typescript-eslint/disable-type-checked"
 parser: "vue-eslint-parser"
 parserOptions:
   parser: "@typescript-eslint/parser"
@@ -15,9 +19,6 @@ parserOptions:
   project: "./tsconfig.json"
   extraFileExtensions:
     - ".vue"
-ignorePatterns:
-  - postcss.config.cjs
-  - vite.config.ts
 plugins:
   - vue
   - "@typescript-eslint"

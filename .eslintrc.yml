@@ -1,29 +1,28 @@
 env:
   browser: true
   es2021: true
+  node: true
 extends:
-  - eslint:recommended
-  - plugin:vue/vue3-recommended
+  - "eslint:recommended"
+  - "plugin:vue/vue3-recommended"
   - "@vue/typescript/recommended"
-  - prettier
+  - "prettier"
 overrides:
   - files:
-      - "*.config.{ts,js}"
+      - "*.config.{js,ts}"
     extends:
-      - "@typescript-eslint/disable-type-checked"
-parser: "vue-eslint-parser"
+      - "plugin:@typescript-eslint/recommended-requiring-type-checking"
 parserOptions:
-  parser: "@typescript-eslint/parser"
   ecmaVersion: latest
   sourceType: module
   project: "./tsconfig.json"
-  extraFileExtensions:
-    - ".vue"
+ignorePatterns:
+  - vite.config.ts
 plugins:
   - vue
   - "@typescript-eslint"
   - prettier
 rules:
-  vue/component-name-in-template-casing:
+  "vue/component-name-in-template-casing":
     - "error"
     - "PascalCase"

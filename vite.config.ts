@@ -33,6 +33,9 @@ export default defineConfig({
       },
     },
   },
+  optimizeDeps: {
+    include: ["vue"],
+  },
   plugins: [vue()],
   resolve: {
     alias: {
@@ -47,8 +50,5 @@ export default defineConfig({
       assets: `${__dirname}/src/assets/`,
       "assets/": `${__dirname}/src/assets/`,
     },
-  },
-  css: {
-    devSourcemap: true,
   },
 });

@@ -1,6 +1,7 @@
+root: true
 env:
   browser: true
-  es2021: true
+  es2022: true
   node: true
 extends:
   - "eslint:recommended"
@@ -13,7 +14,6 @@ overrides:
     extends:
       - "plugin:@typescript-eslint/recommended-requiring-type-checking"
 parserOptions:
-  ecmaVersion: latest
   sourceType: module
   project: "./tsconfig.json"
 ignorePatterns:

@@ -8,5 +8,8 @@
     "after 9:00am and before 6:00pm"
   ],
   "prHourlyLimit": 0,
-  "branchConcurrentLimit": 0
+  "branchConcurrentLimit": 0,
+  "assignees": [
+    "hytsnbr"
+  ]
 }

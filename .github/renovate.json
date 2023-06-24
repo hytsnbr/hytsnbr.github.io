@@ -11,5 +11,12 @@
   "branchConcurrentLimit": 0,
   "assignees": [
     "hytsnbr"
-  ]
+  ],
+  "assigneesSampleSize": 1,
+  "assigneesFromCodeOwners": true,
+  "reviewers": [
+    "hytsnbr"
+  ],
+  "reviewersFromCodeOwners": true,
+  "reviewersSampleSize": 1
 }

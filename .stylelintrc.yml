@@ -4,6 +4,10 @@ extends:
   - stylelint-config-recommended-vue
 
 rules:
+  scss/at-rule-no-unknown:
+    - true
+    - ignoreAtRules:
+        - tailwind
   value-keyword-case:
     - lower # 下のルールを変更させるためにあえて記述（エラー回避のため）
     - camelCaseSvgKeywords: # SVG関連のプロパティが全部小文字になるのを回避

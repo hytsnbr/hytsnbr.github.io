@@ -7,6 +7,7 @@ extends:
   - "eslint:recommended"
   - "plugin:vue/vue3-recommended"
   - "@vue/typescript/recommended"
+  - "plugin:tailwindcss/recommended"
   - "prettier"
 overrides:
   - files:
@@ -16,13 +17,16 @@ overrides:
 parserOptions:
   sourceType: module
   project: "./tsconfig.json"
-ignorePatterns:
-  - vite.config.ts
+  warnOnUnsupportedTypeScriptVersion: false
+ignorePatterns: "*.config.ts"
 plugins:
-  - vue
+  - "vue"
   - "@typescript-eslint"
-  - prettier
+  - "tailwindcss"
+  - "prettier"
 rules:
   "vue/component-name-in-template-casing":
     - "error"
     - "PascalCase"
+  "tailwindcss/no-custom-classname":
+    - "off"

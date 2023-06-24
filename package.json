@@ -15,7 +15,8 @@
     "fix": "pnpm format && pnpm lint"
   },
   "dependencies": {
-    "vue": "^3.2.47"
+    "vue": "^3.2.47",
+    "vue-router": "^4.2.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.5",
@@ -28,6 +29,7 @@
     "@vue/eslint-config-typescript": "^11.0.3",
     "autoprefixer": "^10.4.14",
     "css-declaration-sorter": "^7.0.0",
+    "daisyui": "^3.1.1",
     "eslint": "^8.42.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-tailwindcss": "^3.12.1",
@@ -39,6 +41,7 @@
     "postcss-sort-media-queries": "^5.2.0",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.3.0",
+    "remixicon": "^3.4.0",
     "sass": "^1.62.1",
     "stylelint": "^15.6.2",
     "stylelint-config-recommended-scss": "^12.0.0",

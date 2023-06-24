@@ -1,12 +1,3 @@
-<script setup lang="ts">
-</script>
-
 <template>
-  <main>
-    <h1>INDEX</h1>
-    <section>
-    </section>
-  </main>
+  <router-view></router-view>
 </template>
-
-<!-- <style scoped lang="scss"></style> -->

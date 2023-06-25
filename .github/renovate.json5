@@ -1,0 +1,64 @@
+{
+  // JSONスキーマで入力補完できるようにする
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [],
+  //タイムゾーン
+  "timezone": "Asia/Tokyo",
+  // スケジュール設定（UTCで設定する）
+  "schedule": [
+    "after 0:00am and before 9:00am"
+  ],
+  // 1時間で作成できるPRの上限（0で上限無し）
+  "prHourlyLimit": 0,
+  // 作成できるPR/ブランチの上限（0で上限無し）
+  "prConcurrentLimit": 0,
+  // Renovate のコミット上限（デフォルトは無制限）
+  "prCommitsPerRunLimit": 0,
+  // アサイン
+  "assignees": [
+    "hytsnbr"
+  ],
+  // レビュアー
+  "reviewers": [
+    "hytsnbr"
+  ],
+  // ベースブランチ名
+  "branchPrefix": "dependency/",
+  // Issue に Dependency Dashboard を作成するか
+  "dependencyDashboard": true,
+  // Dependency Dashboard の Issueタイトル
+  "dependencyDashboardTitle": "Dependency Dashboard",
+  "dependencyDashboardHeader": "この問題には、Renovate のアップデートと検出された依存関係が記載されています。詳しくは[依存関係ダッシュボード](https://docs.renovatebot.com/key-concepts/dashboard/)のドキュメントをご覧ください。",
+  // CVE のリストアップ条件
+  "dependencyDashboardOSVVulnerabilitySummary": "unresolved",
+  "dependencyDashboardLabels": [
+    "dependencies",
+    "renovate"
+  ], // PRに付けるラベル
+  "labels": [
+    "dependencies",
+    "renovate"
+  ],
+  "prFooter": "[Renovate Bot](https://github.com/renovatebot/renovate) により自動作成\nPR作成時のログ：https://developer.mend.io/github/hytsnbr/renovate-test",
+  "prBodyNotes": [],
+  // 細かいルール
+  "packageRules": [
+    // npm 特有の設定
+    {
+      "matchManagers": [
+        "npm"
+      ],
+      "addLabels": [
+        "npm"
+      ],
+      "additionalBranchPrefix": "npm/"
+    },
+    // メジャーバージョンのアップデートにはラベルを付与する
+    {
+      "matchUpdateTypes": "major",
+      "addLabels": [
+        "major"
+      ]
+    }
+  ]
+}

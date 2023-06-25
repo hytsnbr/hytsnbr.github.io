@@ -6,7 +6,8 @@
   "timezone": "Asia/Tokyo",
   // スケジュール設定（UTCで設定する）
   "schedule": [
-    "after 1:00am and before 10:00am"
+    // "after 1:00am and before 10:00am"
+    "at any time"
   ],
   // 1時間で作成できるPRの上限（0で上限無し）
   "prHourlyLimit": 0,

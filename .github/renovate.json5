@@ -43,6 +43,16 @@
   "prBodyNotes": [],
   // 細かいルール
   "packageRules": [
+    // github-actions 特有の設定
+    {
+      "matchManagers": [
+        "github-actions"
+      ],
+      "addLabels": [
+        "github-actions"
+      ],
+      "additionalBranchPrefix": "github-actions/"
+    },
     // npm 特有の設定
     {
       "matchManagers": [

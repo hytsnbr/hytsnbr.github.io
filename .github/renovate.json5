@@ -4,7 +4,7 @@
   "extends": [],
   //タイムゾーン
   "timezone": "Asia/Tokyo",
-  // スケジュール設定（UTCで設定する）
+  // スケジュール設定（タイムゾーン未設定の場合はUTCで設定する）
   "schedule": [
     "before 12:00am"
   ],

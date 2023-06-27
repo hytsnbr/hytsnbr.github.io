@@ -4,7 +4,7 @@
   "extends": [],
   // pnpm でパッケージのバージョン指定にキャレット(^)を使ったときに更新処理が動かない問題の対応
   // 参考: https://zenn.dev/ikemo/articles/renovate-pnpm
-  "rangeStrategy": "bump"
+  "rangeStrategy": "bump",
   //タイムゾーン
   "timezone": "Asia/Tokyo",
   // スケジュール設定（タイムゾーン未設定の場合はUTCで設定する）

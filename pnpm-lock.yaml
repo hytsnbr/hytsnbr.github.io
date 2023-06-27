@@ -1,4 +1,4 @@
-lockfileVersion: '6.1'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
@@ -86,7 +86,7 @@ devDependencies:
     specifier: ^1.62.1
     version: 1.63.6
   stylelint:
-    specifier: ^15.6.2
+    specifier: ^15.9.0
     version: 15.9.0
   stylelint-config-recommended-scss:
     specifier: ^12.0.0

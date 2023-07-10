@@ -1,8 +1,8 @@
 <script setup lang="ts"></script>
 
 <template>
-  <footer class="footer footer-center p-4 text-base-content">
-    <div>
+  <footer class="bottom-0 p-2 shadow-inner">
+    <div class="flex justify-center">
       <p class="">© 2023 hytsnbr</p>
     </div>
   </footer>

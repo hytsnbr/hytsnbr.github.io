@@ -8,7 +8,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
     "./src/**/*.vue",
   ],
-  darkMode: true,
+  darkMode: "class",
   theme: {
     extend: {},
   },

@@ -1,10 +1,10 @@
 <script setup lang="ts"></script>
 
 <template>
-  <header class="sticky top-0 flex py-1">
-    <div class="navbar bg-base-100">
+  <header class="sticky top-0 px-6 py-2 shadow">
+    <div class="flex">
       <router-link to="/">
-        <button type="button">
+        <button type="button" class="btn">
           <i class="ri-home-4-line"></i>
         </button>
 

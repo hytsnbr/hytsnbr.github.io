@@ -7,11 +7,6 @@ on:
 
   workflow_call:
 
-concurrency:
-  group: build
-  # 多重起動防止
-  cancel-in-progress: true
-
 jobs:
   build:
     runs-on: ubuntu-latest

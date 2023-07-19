@@ -1,0 +1,49 @@
+name: Build
+
+on:
+  pull_request:
+    branches:
+      - main
+
+  workflow_call:
+
+concurrency:
+  group: build
+  # 多重起動防止
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v2
+
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm build
+
+      - name: Cache Build Files
+        uses: actions/cache/save@v3
+        with:
+          # OS間共有の有効化
+          enableCrossOsArchive: true
+          # キャッシュ対象のパス
+          path: ${{ github.workspace }}
+          # キャッシュキー（キャッシュファイル名）
+          key: cache-build-${{ github.sha }}

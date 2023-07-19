@@ -4,8 +4,8 @@ name: Deploy to Github Pages
 on:
   # 実行対象ブランチ
   push:
-    branches: 
-      - "main"
+    branches:
+      - main
 
   # Actions タブから手動でワークフローを実行できるように設定
   workflow_dispatch:
@@ -16,35 +16,38 @@ permissions:
   pages: write
   id-token: write
 
-# 同時に複数のデプロイが走らないようにする
 concurrency:
-  group: "pages"
+  group: pages
+  # 多重起動防止
   cancel-in-progress: true
 
 jobs:
   # ビルド
   build:
+    uses: ./.github/workflows/build.yml
+
+  # デプロイ セットアップ
+  page-setup:
     runs-on: ubuntu-latest
+    if: ${{ !cancelled() }}
+    needs: build
 
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-
-      - name: Set up pnpm
-        uses: pnpm/action-setup@v2
-
-      - name: Set up Node
-        uses: actions/setup-node@v3
         with:
-          node-version: 18
-          cache: pnpm
-          cache-dependency-path: pnpm-lock.yaml
+          fetch-depth: 0
 
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Build
-        run: pnpm build
+      - name: Build Cache Restore
+        uses: actions/cache/restore@v3
+        with:
+          fail-on-cache-miss: true
+          # OS間共有の有効化
+          enableCrossOsArchive: true
+          # キャッシュ対象のパス
+          path: ${{ github.workspace }}
+          # キャッシュキー（キャッシュファイル名）
+          key: cache-build-${{ github.sha }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
@@ -53,12 +56,12 @@ jobs:
         uses: actions/upload-pages-artifact@v2
         with:
           # dist ディレクトリを公開対象に設定する
-          path: "./dist"
+          path: ./dist
 
   # デプロイ
   deploy:
     runs-on: ubuntu-latest
-    needs: build
+    needs: page-setup
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

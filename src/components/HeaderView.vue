@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <header class="sticky top-0 flex px-6 py-2 shadow">
+  <header class="top-0 flex px-6 py-2 shadow">
     <router-link to="/" class="flex place-content-center place-items-center">
       <button type="button" class="btn btn-square">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6">

@@ -1,14 +1,15 @@
 import NotFoundPage from "@/pages/NotFoundPage.vue";
-import TopPages from "@/pages/TopPages.vue";
+import TopPage from "@/pages/TopPage.vue";
 import TestPage from "@/pages/TestPage.vue";
 
 import * as VueRouter from "vue-router";
 
 const routes = [
+  // Common
   {
     path: "/",
     name: "top",
-    component: TopPages,
+    component: TopPage,
   },
   {
     path: "/:pathMatch(.*)*",

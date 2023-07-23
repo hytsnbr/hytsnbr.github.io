@@ -1,5 +1,7 @@
 import NotFoundPage from "@/pages/NotFoundPage.vue";
 import TopPages from "@/pages/TopPages.vue";
+import TestPage from "@/pages/TestPage.vue";
+
 import * as VueRouter from "vue-router";
 
 const routes = [
@@ -12,6 +14,12 @@ const routes = [
     path: "/:pathMatch(.*)*",
     name: "404",
     component: NotFoundPage,
+  },
+  // Custom
+  {
+    path: "/test",
+    name: "test-page",
+    component: TestPage,
   },
 ];
 

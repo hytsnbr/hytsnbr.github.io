@@ -41,8 +41,8 @@ devDependencies:
     specifier: ^10.4.14
     version: 10.4.14(postcss@8.4.27)
   css-declaration-sorter:
-    specifier: ^7.0.2
-    version: 7.0.2(postcss@8.4.27)
+    specifier: ^7.0.3
+    version: 7.0.3(postcss@8.4.27)
   daisyui:
     specifier: ^3.5.0
     version: 3.5.0(ts-node@10.9.1)
@@ -1488,8 +1488,8 @@ packages:
       which: 2.0.2
     dev: true
 
-  /css-declaration-sorter@7.0.2(postcss@8.4.27):
-    resolution: {integrity: sha512-iulo5tHbu/5vm5GZaG+EoVTGCTW7ZxPmVzSThYzC0SODEzTcu51ARSAjVwubK/C7zHopckjBljDsHX+k7n38rA==}
+  /css-declaration-sorter@7.0.3(postcss@8.4.27):
+    resolution: {integrity: sha512-/PHObPdiAXf0H3LOZCyXgBLt5fiS5XGCml/Ylpkmr7ADgq94GffvdGxJEmsSLDo0XGzItJY79dusRka0e4UVLw==}
     engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
       postcss: ^8.0.9

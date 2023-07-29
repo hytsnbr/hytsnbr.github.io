@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import FooterView from "@/components/FooterView.vue";
-import HeaderView from "@/components/HeaderView.vue";
 import CardItem from "@/components/CardItem.vue";
 
 import { getRes } from "@/api";
@@ -16,7 +14,6 @@ try {
 </script>
 
 <template>
-  <HeaderView></HeaderView>
   <main class="container mx-auto flex items-center justify-center">
     <section>
       <div class="grid gap-5 sm:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3">
@@ -26,5 +23,4 @@ try {
       </div>
     </section>
   </main>
-  <FooterView></FooterView>
 </template>

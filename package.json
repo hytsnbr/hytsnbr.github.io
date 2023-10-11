@@ -31,7 +31,7 @@
     "css-declaration-sorter": "^7.0.3",
     "daisyui": "^3.9.2",
     "eslint": "^8.47.0",
-    "eslint-config-prettier": "^8.9.0",
+    "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-tailwindcss": "^3.13.0",
     "eslint-plugin-vue": "^9.17.0",
     "husky": "^8.0.3",

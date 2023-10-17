@@ -44,8 +44,8 @@ devDependencies:
     specifier: ^7.0.3
     version: 7.0.3(postcss@8.4.28)
   daisyui:
-    specifier: ^3.9.2
-    version: 3.9.2(ts-node@10.9.1)
+    specifier: ^3.9.3
+    version: 3.9.3(ts-node@10.9.1)
   eslint:
     specifier: ^8.47.0
     version: 8.47.0
@@ -1511,8 +1511,8 @@ packages:
   /csstype@3.1.2:
     resolution: {integrity: sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==}
 
-  /daisyui@3.9.2(ts-node@10.9.1):
-    resolution: {integrity: sha512-yJZ1QjHUaL+r9BkquTdzNHb7KIgAJVFh0zbOXql2Wu0r7zx5qZNLxclhjN0WLoIpY+o2h/8lqXg7ijj8oTigOw==}
+  /daisyui@3.9.3(ts-node@10.9.1):
+    resolution: {integrity: sha512-8li177QCu6dqlEOzE3h/dAV1y9Movbjx5bzJIO/hNqMNZtJkbHM0trjTzbDejV7N57eNGdjBvAGtxZYKzS4jow==}
     engines: {node: '>=16.9.0'}
     dependencies:
       colord: 2.9.3

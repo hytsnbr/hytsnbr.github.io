@@ -83,8 +83,8 @@ devDependencies:
     specifier: ^3.5.0
     version: 3.5.0
   sass:
-    specifier: ^1.69.3
-    version: 1.69.3
+    specifier: ^1.69.5
+    version: 1.69.5
   stylelint:
     specifier: ^15.11.0
     version: 15.11.0
@@ -105,7 +105,7 @@ devDependencies:
     version: 5.2.2
   vite:
     specifier: ^4.5.0
-    version: 4.5.0(@types/node@20.8.7)(sass@1.69.3)
+    version: 4.5.0(@types/node@20.8.7)(sass@1.69.5)
   vue-tsc:
     specifier: ^1.8.19
     version: 1.8.19(typescript@5.2.2)
@@ -850,7 +850,7 @@ packages:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.5.0(@types/node@20.8.7)(sass@1.69.3)
+      vite: 4.5.0(@types/node@20.8.7)(sass@1.69.5)
       vue: 3.3.4
     dev: true
 
@@ -3317,8 +3317,8 @@ packages:
     resolution: {integrity: sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==}
     dev: true
 
-  /sass@1.69.3:
-    resolution: {integrity: sha512-X99+a2iGdXkdWn1akFPs0ZmelUzyAQfvqYc2P/MPTrJRuIRoTffGzT9W9nFqG00S+c8hXzVmgxhUuHFdrwxkhQ==}
+  /sass@1.69.5:
+    resolution: {integrity: sha512-qg2+UCJibLr2LCVOt3OlPhr/dqVHWOa9XtZf2OjbLs/T4VPSJ00udtgJxH3neXZm+QqX8B+3cU7RaLqp1iVfcQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
@@ -3889,7 +3889,7 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite@4.5.0(@types/node@20.8.7)(sass@1.69.3):
+  /vite@4.5.0(@types/node@20.8.7)(sass@1.69.5):
     resolution: {integrity: sha512-ulr8rNLA6rkyFAlVWw2q5YJ91v098AFQ2R0PRFwPzREXOUJQPtFUG0t+/ZikhaOCDqFoDhN6/v8Sq0o4araFAw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -3921,7 +3921,7 @@ packages:
       esbuild: 0.18.11
       postcss: 8.4.31
       rollup: 3.28.0
-      sass: 1.69.3
+      sass: 1.69.5
     optionalDependencies:
       fsevents: 2.3.2
     dev: true

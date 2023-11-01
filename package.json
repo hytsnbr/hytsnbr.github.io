@@ -50,7 +50,7 @@
     "tailwindcss": "^3.3.5",
     "typescript": "^5.2.2",
     "vite": "^4.5.0",
-    "vue-tsc": "^1.8.19"
+    "vue-tsc": "^1.8.22"
   },
   "lint-staged": {
     "*.{ts,vue}": "pnpm lint:script",

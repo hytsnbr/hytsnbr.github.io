@@ -26,7 +26,7 @@
     "@typescript-eslint/parser": "^5.62.0",
     "@vitejs/plugin-vue": "^4.4.0",
     "@vue/eslint-config-prettier": "^8.0.0",
-    "@vue/eslint-config-typescript": "^11.0.3",
+    "@vue/eslint-config-typescript": "^12.0.0",
     "autoprefixer": "^10.4.16",
     "css-declaration-sorter": "^7.1.1",
     "daisyui": "^3.9.4",

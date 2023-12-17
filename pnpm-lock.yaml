@@ -80,8 +80,8 @@ devDependencies:
     specifier: ^0.5.7
     version: 0.5.7(prettier@3.1.0)
   remixicon:
-    specifier: ^3.6.0
-    version: 3.6.0
+    specifier: ^4.0.1
+    version: 4.0.1
   sass:
     specifier: ^1.69.5
     version: 1.69.5
@@ -3508,8 +3508,8 @@ packages:
       strip-indent: 4.0.0
     dev: true
 
-  /remixicon@3.6.0:
-    resolution: {integrity: sha512-+IEL/cPimpAhvg7o24Pwyd3v+R0/j0p0WK4MHJUfv/HrsHJ0LElnbMFY8l+Uu/xDBzFIvGB64towtEnAkK9obg==}
+  /remixicon@4.0.1:
+    resolution: {integrity: sha512-Apa13Q01mFIuQEMvSVni8NnF9cV0vud9YXb2prQ+g3jmWpxKoFCL+yIiQ+9JCeLptdGKyoqVjCYOwwBQVHdciQ==}
     dev: true
 
   /require-directory@2.1.1:

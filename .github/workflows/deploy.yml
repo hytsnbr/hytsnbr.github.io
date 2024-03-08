@@ -39,7 +39,7 @@ jobs:
           fetch-depth: 0
 
       - name: Build Cache Restore
-        uses: actions/cache/restore@v3
+        uses: actions/cache/restore@v4
         with:
           fail-on-cache-miss: true
           # OS間共有の有効化

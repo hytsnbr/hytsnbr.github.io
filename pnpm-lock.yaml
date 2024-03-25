@@ -83,8 +83,8 @@ devDependencies:
     specifier: ^4.2.0
     version: 4.2.0
   sass:
-    specifier: ^1.69.5
-    version: 1.69.5
+    specifier: ^1.72.0
+    version: 1.72.0
   stylelint:
     specifier: ^15.11.0
     version: 15.11.0
@@ -105,7 +105,7 @@ devDependencies:
     version: 5.4.3
   vite:
     specifier: ^5.2.6
-    version: 5.2.6(@types/node@20.11.30)(sass@1.69.5)
+    version: 5.2.6(@types/node@20.11.30)(sass@1.72.0)
   vue-tsc:
     specifier: ^2.0.7
     version: 2.0.7(typescript@5.4.3)
@@ -1123,7 +1123,7 @@ packages:
       vite: ^4.0.0 || ^5.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 5.2.6(@types/node@20.11.30)(sass@1.69.5)
+      vite: 5.2.6(@types/node@20.11.30)(sass@1.72.0)
       vue: 3.4.21(typescript@5.4.3)
     dev: true
 
@@ -3517,14 +3517,14 @@ packages:
       queue-microtask: 1.2.3
     dev: true
 
-  /sass@1.69.5:
-    resolution: {integrity: sha512-qg2+UCJibLr2LCVOt3OlPhr/dqVHWOa9XtZf2OjbLs/T4VPSJ00udtgJxH3neXZm+QqX8B+3cU7RaLqp1iVfcQ==}
+  /sass@1.72.0:
+    resolution: {integrity: sha512-Gpczt3WA56Ly0Mn8Sl21Vj94s1axi9hDIzDFn9Ph9x3C3p4nNyvsqJoQyVXKou6cBlfFWEgRW4rT8Tb4i3XnVA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
       chokidar: 3.5.3
       immutable: 4.3.0
-      source-map-js: 1.0.2
+      source-map-js: 1.2.0
     dev: true
 
   /semver@7.5.4:
@@ -4062,7 +4062,7 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite@5.2.6(@types/node@20.11.30)(sass@1.69.5):
+  /vite@5.2.6(@types/node@20.11.30)(sass@1.72.0):
     resolution: {integrity: sha512-FPtnxFlSIKYjZ2eosBQamz4CbyrTizbZ3hnGJlh/wMtCrlp1Hah6AzBLjGI5I2urTfNnpovpHdrL6YRuBOPnCA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -4094,7 +4094,7 @@ packages:
       esbuild: 0.20.2
       postcss: 8.4.38
       rollup: 4.13.0
-      sass: 1.69.5
+      sass: 1.72.0
     optionalDependencies:
       fsevents: 2.3.3
     dev: true

@@ -36,7 +36,7 @@
     "eslint-plugin-vue": "^9.19.2",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.2",
-    "postcss": "^8.4.32",
+    "postcss": "^8.4.38",
     "postcss-html": "^1.6.0",
     "postcss-sort-media-queries": "^5.2.0",
     "prettier": "^3.2.5",

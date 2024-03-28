@@ -40,7 +40,7 @@
     "postcss-html": "^1.6.0",
     "postcss-sort-media-queries": "^5.2.0",
     "prettier": "^3.2.5",
-    "prettier-plugin-tailwindcss": "^0.5.12",
+    "prettier-plugin-tailwindcss": "^0.5.13",
     "remixicon": "^4.2.0",
     "sass": "^1.72.0",
     "stylelint": "^16.3.1",

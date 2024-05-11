@@ -29,7 +29,7 @@
     "@vue/eslint-config-typescript": "^13.0.0",
     "autoprefixer": "^10.4.19",
     "css-declaration-sorter": "^7.2.0",
-    "daisyui": "^4.10.2",
+    "daisyui": "^4.11.1",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-tailwindcss": "^3.15.1",

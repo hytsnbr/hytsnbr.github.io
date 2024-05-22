@@ -17,13 +17,13 @@ importers:
     devDependencies:
       '@commitlint/cli':
         specifier: ^19.3.0
-        version: 19.3.0(@types/node@20.11.30)(typescript@5.4.5)
+        version: 19.3.0(@types/node@20.12.12)(typescript@5.4.5)
       '@commitlint/config-conventional':
         specifier: ^19.2.2
         version: 19.2.2
       '@types/node':
-        specifier: ^20.11.30
-        version: 20.11.30
+        specifier: ^20.12.12
+        version: 20.12.12
       '@typescript-eslint/eslint-plugin':
         specifier: ^5.62.0
         version: 5.62.0(@typescript-eslint/parser@6.10.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)
@@ -32,7 +32,7 @@ importers:
         version: 6.10.0(eslint@8.57.0)(typescript@5.4.5)
       '@vitejs/plugin-vue':
         specifier: ^5.0.4
-        version: 5.0.4(vite@5.2.7(@types/node@20.11.30)(sass@1.77.2))(vue@3.4.27(typescript@5.4.5))
+        version: 5.0.4(vite@5.2.7(@types/node@20.12.12)(sass@1.77.2))(vue@3.4.27(typescript@5.4.5))
       '@vue/eslint-config-prettier':
         specifier: ^9.0.0
         version: 9.0.0(eslint@8.57.0)(prettier@3.2.5)
@@ -107,7 +107,7 @@ importers:
         version: 5.4.5
       vite:
         specifier: ^5.2.7
-        version: 5.2.7(@types/node@20.11.30)(sass@1.77.2)
+        version: 5.2.7(@types/node@20.12.12)(sass@1.77.2)
       vue-tsc:
         specifier: ^2.0.19
         version: 2.0.19(typescript@5.4.5)
@@ -524,8 +524,8 @@ packages:
   '@types/json-schema@7.0.12':
     resolution: {integrity: sha512-Hr5Jfhc9eYOQNPYO5WLDq/n4jqijdHNlDXjuAQkkt+mWdQR+XJToOHrsD4cPaMXpn6KO7y2+wM8AZEs8VpBLVA==}
 
-  '@types/node@20.11.30':
-    resolution: {integrity: sha512-dHM6ZxwlmuZaRmUPfv1p+KrdD1Dci04FbdEm/9wEMouFqxYoFl5aMkt0VMAUtYRQDyYvD41WJLukhq/ha3YuTw==}
+  '@types/node@20.12.12':
+    resolution: {integrity: sha512-eWLDGF/FOSPtAvEqeRAQ4C8LSA7M1I7i0ky1I8U7kD1J5ITyW3AsRhQrKVoWf5pFKZ2kILsEGJhsI9r93PYnOw==}
 
   '@types/semver@7.5.0':
     resolution: {integrity: sha512-G8hZ6XJiHnuhQKR7ZmysCeJWE08o8T0AXtk5darsCaTVsYZhhgUrq53jizaR2FvsoeCwJhlmwTjkXBY5Pn/ZHw==}
@@ -2429,11 +2429,11 @@ snapshots:
       '@babel/helper-validator-identifier': 7.22.5
       to-fast-properties: 2.0.0
 
-  '@commitlint/cli@19.3.0(@types/node@20.11.30)(typescript@5.4.5)':
+  '@commitlint/cli@19.3.0(@types/node@20.12.12)(typescript@5.4.5)':
     dependencies:
       '@commitlint/format': 19.3.0
       '@commitlint/lint': 19.2.2
-      '@commitlint/load': 19.2.0(@types/node@20.11.30)(typescript@5.4.5)
+      '@commitlint/load': 19.2.0(@types/node@20.12.12)(typescript@5.4.5)
       '@commitlint/read': 19.2.1
       '@commitlint/types': 19.0.3
       execa: 8.0.1
@@ -2480,7 +2480,7 @@ snapshots:
       '@commitlint/rules': 19.0.3
       '@commitlint/types': 19.0.3
 
-  '@commitlint/load@19.2.0(@types/node@20.11.30)(typescript@5.4.5)':
+  '@commitlint/load@19.2.0(@types/node@20.12.12)(typescript@5.4.5)':
     dependencies:
       '@commitlint/config-validator': 19.0.3
       '@commitlint/execute-rule': 19.0.0
@@ -2488,7 +2488,7 @@ snapshots:
       '@commitlint/types': 19.0.3
       chalk: 5.3.0
       cosmiconfig: 9.0.0(typescript@5.4.5)
-      cosmiconfig-typescript-loader: 5.0.0(@types/node@20.11.30)(cosmiconfig@9.0.0(typescript@5.4.5))(typescript@5.4.5)
+      cosmiconfig-typescript-loader: 5.0.0(@types/node@20.12.12)(cosmiconfig@9.0.0(typescript@5.4.5))(typescript@5.4.5)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -2744,13 +2744,13 @@ snapshots:
 
   '@types/conventional-commits-parser@5.0.0':
     dependencies:
-      '@types/node': 20.11.30
+      '@types/node': 20.12.12
 
   '@types/estree@1.0.5': {}
 
   '@types/json-schema@7.0.12': {}
 
-  '@types/node@20.11.30':
+  '@types/node@20.12.12':
     dependencies:
       undici-types: 5.26.5
 
@@ -2955,9 +2955,9 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@vitejs/plugin-vue@5.0.4(vite@5.2.7(@types/node@20.11.30)(sass@1.77.2))(vue@3.4.27(typescript@5.4.5))':
+  '@vitejs/plugin-vue@5.0.4(vite@5.2.7(@types/node@20.12.12)(sass@1.77.2))(vue@3.4.27(typescript@5.4.5))':
     dependencies:
-      vite: 5.2.7(@types/node@20.11.30)(sass@1.77.2)
+      vite: 5.2.7(@types/node@20.12.12)(sass@1.77.2)
       vue: 3.4.27(typescript@5.4.5)
 
   '@volar/language-core@2.2.4':
@@ -3263,9 +3263,9 @@ snapshots:
       meow: 12.1.1
       split2: 4.2.0
 
-  cosmiconfig-typescript-loader@5.0.0(@types/node@20.11.30)(cosmiconfig@9.0.0(typescript@5.4.5))(typescript@5.4.5):
+  cosmiconfig-typescript-loader@5.0.0(@types/node@20.12.12)(cosmiconfig@9.0.0(typescript@5.4.5))(typescript@5.4.5):
     dependencies:
-      '@types/node': 20.11.30
+      '@types/node': 20.12.12
       cosmiconfig: 9.0.0(typescript@5.4.5)
       jiti: 1.21.0
       typescript: 5.4.5
@@ -4543,13 +4543,13 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  vite@5.2.7(@types/node@20.11.30)(sass@1.77.2):
+  vite@5.2.7(@types/node@20.12.12)(sass@1.77.2):
     dependencies:
       esbuild: 0.20.2
       postcss: 8.4.38
       rollup: 4.13.0
     optionalDependencies:
-      '@types/node': 20.11.30
+      '@types/node': 20.12.12
       fsevents: 2.3.3
       sass: 1.77.2
 

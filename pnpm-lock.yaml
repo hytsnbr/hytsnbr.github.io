@@ -12,8 +12,8 @@ importers:
         specifier: ^3.4.29
         version: 3.4.29(typescript@5.5.2)
       vue-router:
-        specifier: ^4.3.3
-        version: 4.3.3(vue@3.4.29(typescript@5.5.2))
+        specifier: ^4.4.2
+        version: 4.4.2(vue@3.4.29(typescript@5.5.2))
     devDependencies:
       '@commitlint/cli':
         specifier: ^19.3.0
@@ -711,8 +711,8 @@ packages:
   '@vue/compiler-ssr@3.4.29':
     resolution: {integrity: sha512-rFbwCmxJ16tDp3N8XCx5xSQzjhidYjXllvEcqX/lopkoznlNPz3jyy0WGJCyhAaVQK677WWFt3YO/WUEkMMUFQ==}
 
-  '@vue/devtools-api@6.6.1':
-    resolution: {integrity: sha512-LgPscpE3Vs0x96PzSSB4IGVSZXZBZHpfxs+ZA1d+VEPwHdOXowy/Y2CsvCAIFrf+ssVU1pD1jidj505EpUnfbA==}
+  '@vue/devtools-api@6.6.3':
+    resolution: {integrity: sha512-0MiMsFma/HqA6g3KLKn+AGpL1kgKhFWszC9U29NfpWK5LE7bjeXxySWJrOJ77hBz+TBrBQ7o4QJqbPbqbs8rJw==}
 
   '@vue/eslint-config-prettier@9.0.0':
     resolution: {integrity: sha512-z1ZIAAUS9pKzo/ANEfd2sO+v2IUalz7cM/cTLOZ7vRFOPk5/xuRKQteOu1DErFLAh/lYGXMVZ0IfYKlyInuDVg==}
@@ -2385,8 +2385,8 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
-  vue-router@4.3.3:
-    resolution: {integrity: sha512-8Q+u+WP4N2SXY38FDcF2H1dUEbYVHVPtPCPZj/GTZx8RCbiB8AtJP9+YIxn4Vs0svMTNQcLIzka4GH7Utkx9xQ==}
+  vue-router@4.4.2:
+    resolution: {integrity: sha512-1qNybkn2L7QsLzaXs8nvlQmRKp8XF8DCxZys/Jr1JpQcHsKUxTKzTxCVA1G7NfBfwRIBgCJPoujOG5lHCCNUxw==}
     peerDependencies:
       vue: ^3.2.0
 
@@ -3090,7 +3090,7 @@ snapshots:
       '@vue/compiler-dom': 3.4.29
       '@vue/shared': 3.4.29
 
-  '@vue/devtools-api@6.6.1': {}
+  '@vue/devtools-api@6.6.3': {}
 
   '@vue/eslint-config-prettier@9.0.0(eslint@8.57.0)(prettier@3.3.3)':
     dependencies:
@@ -4690,9 +4690,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  vue-router@4.3.3(vue@3.4.29(typescript@5.5.2)):
+  vue-router@4.4.2(vue@3.4.29(typescript@5.5.2)):
     dependencies:
-      '@vue/devtools-api': 6.6.1
+      '@vue/devtools-api': 6.6.3
       vue: 3.4.29(typescript@5.5.2)
 
   vue-template-compiler@2.7.14:

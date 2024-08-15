@@ -15,7 +15,7 @@
     "fix": "pnpm format && pnpm lint"
   },
   "dependencies": {
-    "vue": "^3.4.37",
+    "vue": "^3.4.38",
     "vue-router": "^4.4.3"
   },
   "devDependencies": {

@@ -15,8 +15,6 @@
   "prHourlyLimit": 0,
   // 作成できるPR/ブランチの上限（0で上限無し）
   "prConcurrentLimit": 0,
-  // Renovate のコミット上限（デフォルトは無制限）
-  "prCommitsPerRunLimit": 0,
   // アサイン
   "assignees": [
     "hytsnbr"

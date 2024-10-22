@@ -91,8 +91,8 @@ importers:
         specifier: 0.6.8
         version: 0.6.8(prettier@3.3.3)
       remixicon:
-        specifier: 4.3.0
-        version: 4.3.0
+        specifier: 4.4.0
+        version: 4.4.0
       sass:
         specifier: 1.80.3
         version: 1.80.3
@@ -2138,8 +2138,8 @@ packages:
     resolution: {integrity: sha512-yDMz9g+VaZkqBYS/ozoBJwaBhTbZo3UNYQHNRw1D3UFQB8oHB4uS/tAODO+ZLjGWmUbKnIlOWO+aaIiAxrUWHA==}
     engines: {node: '>= 14.16.0'}
 
-  remixicon@4.3.0:
-    resolution: {integrity: sha512-jRYQ37dTFSkJtvcxwTUAkIiXkYRvA9EDvVuXPNrmt2xf/VS//CRgFtsX2TAFBoQOhh9SDh7l6La4Xu12snEyxg==}
+  remixicon@4.4.0:
+    resolution: {integrity: sha512-6n0S4Mx2I35/Cb3gd4vB330sPh9kHTUK3AI0gGPt/y3Tiyg7ld9zwXY1Ssa3YwDdMArlDqUiEK1V3KS59ZnZYw==}
 
   require-directory@2.1.1:
     resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==}
@@ -4440,7 +4440,7 @@ snapshots:
 
   readdirp@4.0.2: {}
 
-  remixicon@4.3.0: {}
+  remixicon@4.4.0: {}
 
   require-directory@2.1.1: {}
 

@@ -1,0 +1,95 @@
+{
+  "$schema": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainer.schema.json",
+  "name": "hytsnbr.github.io",
+  "dockerComposeFile": "compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1.6.1": {
+      "version": "20.18.0"
+    },
+    "ghcr.io/devcontainers-contrib/features/corepack:1.0.1": {}
+  },
+  "postCreateCommand": "/bin/bash .devcontainer/init.sh",
+  "forwardPorts": [
+    3000
+  ],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "vite.buildCommand": "pnpm build",
+        "vite.devCommand": "pnpm dev",
+        "npm.packageManager": "pnpm",
+        "stylelint.packageManager": "pnpm",
+        "typescript.disableAutomaticTypeAcquisition": false,
+        "terminal.integrated.shellIntegration.enabled": true,
+        "npm.scriptExplorerAction": "open",
+        "conventionalCommits.scopes": [
+          "Renovate"
+        ],
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "prettier.prettierPath": "./node_modules/prettier"
+      },
+      "extensions": [
+        "antfu.vite",
+        "stylelint.vscode-stylelint",
+        "Vue.volar",
+        "ms-vscode-remote.remote-containers",
+        "dbaeumer.vscode-eslint",
+        "aaron-bond.better-comments",
+        "vivaxy.vscode-conventional-commits",
+        "EditorConfig.EditorConfig",
+        "usernamehw.errorlens",
+        "mhutchie.git-graph",
+        "donjayamanne.githistory",
+        "eamodio.gitlens",
+        "VisualStudioExptTeam.vscodeintellicode",
+        "VisualStudioExptTeam.intellicode-api-usage-examples",
+        "VisualStudioExptTeam.vscodeintellicode-completions",
+        "ryu1kn.partial-diff",
+        "hbenl.vscode-test-explorer",
+        "wayou.vscode-todo-highlight",
+        "Gruntfuggly.todo-tree",
+        "redhat.vscode-yaml",
+        "RapidAPI.vscode-rapidapi-client",
+        "github.vscode-github-actions",
+        "rangav.vscode-thunder-client",
+        "jbockle.jbockle-format-files",
+        "formulahendry.auto-close-tag",
+        "webben.browserslist",
+        "xabikos.JavaScriptSnippets",
+        "remcohaszing.schemastore",
+        "hollowtree.vue-snippets",
+        "sdras.vue-vscode-snippets",
+        "wejectchan.vue3-snippets-for-vscode",
+        "formulahendry.auto-complete-tag",
+        "steoates.autoimport",
+        "mgmcdermott.vscode-language-babel",
+        "michelemelluso.code-beautifier",
+        "wmaurer.change-case",
+        "pucelle.vscode-css-navigation",
+        "pranaygp.vscode-css-peek",
+        "naumovs.color-highlight",
+        "antfu.file-nesting",
+        "tombonnike.vscode-status-bar-format-toggle",
+        "ecmel.vscode-html-css",
+        "bradgashler.htmltagwrap",
+        "solnurkarim.html-to-css-autocompletion",
+        "lokalise.i18n-ally",
+        "wix.vscode-import-cost",
+        "oderwat.indent-rainbow",
+        "SirTori.indenticator",
+        "Zignd.html-css-class-completion",
+        "christian-kohler.npm-intellisense",
+        "ionutvmi.path-autocomplete",
+        "esbenp.prettier-vscode",
+        "richie5um2.vscode-sort-json",
+        "mrmlnc.vscode-scss",
+        "bradlc.vscode-tailwindcss",
+        "ChakrounAnas.turbo-console-log",
+        "dariofuzinato.vue-peek"
+      ]
+    }
+  }
+}

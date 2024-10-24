@@ -1,5 +1,6 @@
 import vue from "@vitejs/plugin-vue";
 import { defineConfig } from "vite";
+import postcss from "./postcss.config";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -37,6 +38,9 @@ export default defineConfig({
     include: ["vue"],
   },
   plugins: [vue()],
+  css: {
+    postcss,
+  },
   resolve: {
     alias: {
       "~~": `${__dirname}/`,

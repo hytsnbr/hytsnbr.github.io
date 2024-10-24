@@ -1,0 +1,23 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    volumes:
+      - ../:/workspace:cached
+      - node_modules:/workspace/node_modules
+    
+    command: sleep infinity
+
+    networks:
+      - internal_network
+      - external_network
+
+volumes:
+  node_modules:
+  
+networks:
+  internal_network:
+    internal: true
+  external_network:

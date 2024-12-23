@@ -69,5 +69,18 @@
         "major"
       ]
     }
+    // マイナー、パッチバージョンのアップデートは自動マージする
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      // 自動マージを有効化
+      "automerge": true,
+      // ラベルを付与する
+      "addLabels": [
+        "auto-merge"
+      ]
+    }
   ]
 }

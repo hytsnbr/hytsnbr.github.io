@@ -68,7 +68,7 @@
       "addLabels": [
         "major"
       ]
-    }
+    },
     // マイナー、パッチバージョンのアップデートは自動マージする
     {
       "matchUpdateTypes": [

@@ -16,7 +16,7 @@
     "fix": "pnpm format && pnpm lint"
   },
   "dependencies": {
-    "vue": "3.5.15",
+    "vue": "3.5.16",
     "vue-router": "4.5.1"
   },
   "devDependencies": {

@@ -1,9 +1,9 @@
 import vue from "eslint-plugin-vue";
 import typescriptEslint from "@typescript-eslint/eslint-plugin";
 import tailwindcss from "eslint-plugin-tailwindcss";
-import prettier from "eslint-plugin-prettier";
 import globals from "globals";
 import path from "node:path";
+import prettier from "prettier";
 import { fileURLToPath } from "node:url";
 import js from "@eslint/js";
 import { FlatCompat } from "@eslint/eslintrc";

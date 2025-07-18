@@ -34,7 +34,7 @@
     "css-declaration-sorter": "7.2.0",
     "daisyui": "5.0.46",
     "eslint": "9.31.0",
-    "eslint-config-prettier": "10.1.5",
+    "eslint-config-prettier": "10.1.8",
     "eslint-plugin-tailwindcss": "3.18.2",
     "eslint-plugin-vue": "9.33.0",
     "globals": "16.3.0",

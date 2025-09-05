@@ -33,7 +33,7 @@
     "autoprefixer": "10.4.21",
     "css-declaration-sorter": "7.2.0",
     "daisyui": "5.1.7",
-    "eslint": "9.34.0",
+    "eslint": "9.35.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-tailwindcss": "3.18.2",
     "eslint-plugin-vue": "9.33.0",

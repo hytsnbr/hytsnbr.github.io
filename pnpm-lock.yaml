@@ -38,7 +38,7 @@ importers:
         version: 8.46.2(eslint@9.38.0(jiti@2.4.1))(typescript@5.9.3)
       '@vitejs/plugin-vue':
         specifier: 6.0.1
-        version: 6.0.1(vite@7.1.12(@types/node@24.9.2)(jiti@2.4.1)(sass@1.93.2)(yaml@2.8.1))(vue@3.5.22(typescript@5.9.3))
+        version: 6.0.1(vite@7.1.12(@types/node@24.9.2)(jiti@2.4.1)(sass@1.93.3)(yaml@2.8.1))(vue@3.5.22(typescript@5.9.3))
       '@vue/eslint-config-prettier':
         specifier: 10.2.0
         version: 10.2.0(eslint@9.38.0(jiti@2.4.1))(prettier@3.6.2)
@@ -94,8 +94,8 @@ importers:
         specifier: 4.7.0
         version: 4.7.0
       sass:
-        specifier: 1.93.2
-        version: 1.93.2
+        specifier: 1.93.3
+        version: 1.93.3
       stylelint:
         specifier: 16.25.0
         version: 16.25.0(typescript@5.9.3)
@@ -116,7 +116,7 @@ importers:
         version: 5.9.3
       vite:
         specifier: 7.1.12
-        version: 7.1.12(@types/node@24.9.2)(jiti@2.4.1)(sass@1.93.2)(yaml@2.8.1)
+        version: 7.1.12(@types/node@24.9.2)(jiti@2.4.1)(sass@1.93.3)(yaml@2.8.1)
       vue-tsc:
         specifier: 3.1.2
         version: 3.1.2(typescript@5.9.3)
@@ -2095,8 +2095,8 @@ packages:
   run-parallel@1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
 
-  sass@1.93.2:
-    resolution: {integrity: sha512-t+YPtOQHpGW1QWsh1CHQ5cPIr9lbbGZLZnbihP/D/qZj/yuV68m8qarcV17nvkOX81BCrvzAlq2klCQFZghyTg==}
+  sass@1.93.3:
+    resolution: {integrity: sha512-elOcIZRTM76dvxNAjqYrucTSI0teAF/L2Lv0s6f6b7FOwcwIuA357bIE871580AjHJuSvLIRUosgV+lIWx6Rgg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -3114,10 +3114,10 @@ snapshots:
       '@typescript-eslint/types': 8.46.2
       eslint-visitor-keys: 4.2.1
 
-  '@vitejs/plugin-vue@6.0.1(vite@7.1.12(@types/node@24.9.2)(jiti@2.4.1)(sass@1.93.2)(yaml@2.8.1))(vue@3.5.22(typescript@5.9.3))':
+  '@vitejs/plugin-vue@6.0.1(vite@7.1.12(@types/node@24.9.2)(jiti@2.4.1)(sass@1.93.3)(yaml@2.8.1))(vue@3.5.22(typescript@5.9.3))':
     dependencies:
       '@rolldown/pluginutils': 1.0.0-beta.29
-      vite: 7.1.12(@types/node@24.9.2)(jiti@2.4.1)(sass@1.93.2)(yaml@2.8.1)
+      vite: 7.1.12(@types/node@24.9.2)(jiti@2.4.1)(sass@1.93.3)(yaml@2.8.1)
       vue: 3.5.22(typescript@5.9.3)
 
   '@volar/language-core@2.4.23':
@@ -4302,7 +4302,7 @@ snapshots:
     dependencies:
       queue-microtask: 1.2.3
 
-  sass@1.93.2:
+  sass@1.93.3:
     dependencies:
       chokidar: 4.0.1
       immutable: 5.0.2
@@ -4591,7 +4591,7 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  vite@7.1.12(@types/node@24.9.2)(jiti@2.4.1)(sass@1.93.2)(yaml@2.8.1):
+  vite@7.1.12(@types/node@24.9.2)(jiti@2.4.1)(sass@1.93.3)(yaml@2.8.1):
     dependencies:
       esbuild: 0.25.0
       fdir: 6.5.0(picomatch@4.0.3)
@@ -4603,7 +4603,7 @@ snapshots:
       '@types/node': 24.9.2
       fsevents: 2.3.3
       jiti: 2.4.1
-      sass: 1.93.2
+      sass: 1.93.3
       yaml: 2.8.1
 
   vscode-uri@3.0.8: {}

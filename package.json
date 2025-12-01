@@ -44,7 +44,7 @@
     "postcss-html": "1.8.0",
     "postcss-sort-media-queries": "5.2.0",
     "prettier": "3.7.3",
-    "prettier-plugin-tailwindcss": "0.7.1",
+    "prettier-plugin-tailwindcss": "0.7.2",
     "remixicon": "4.7.0",
     "sass": "1.94.2",
     "stylelint": "16.26.1",

@@ -31,7 +31,7 @@
     "@vue/eslint-config-prettier": "10.2.0",
     "@vue/eslint-config-typescript": "13.0.0",
     "autoprefixer": "10.4.23",
-    "css-declaration-sorter": "7.3.0",
+    "css-declaration-sorter": "7.3.1",
     "daisyui": "5.5.14",
     "eslint": "9.39.2",
     "eslint-config-prettier": "10.1.8",

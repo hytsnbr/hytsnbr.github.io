@@ -5,7 +5,7 @@
   "service": "app",
   "workspaceFolder": "/workspace",
   "features": {
-    "ghcr.io/devcontainers/features/node:1.6.3": {
+    "ghcr.io/devcontainers/features/node:1.6.4": {
       "version": "24.13.0"
     }
   },

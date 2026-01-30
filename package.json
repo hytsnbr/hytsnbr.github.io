@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "vue": "3.5.27",
-    "vue-router": "5.0.0"
+    "vue-router": "5.0.1"
   },
   "devDependencies": {
     "@commitlint/cli": "20.3.1",

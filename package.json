@@ -20,7 +20,7 @@
     "vue-router": "5.0.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "20.3.1",
+    "@commitlint/cli": "20.4.0",
     "@commitlint/config-conventional": "20.3.1",
     "@eslint/eslintrc": "3.3.3",
     "@eslint/js": "9.39.2",

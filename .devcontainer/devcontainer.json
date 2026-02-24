@@ -6,7 +6,7 @@
   "workspaceFolder": "/workspace",
   "features": {
     "ghcr.io/devcontainers/features/node:1.7.1": {
-      "version": "24.13.1"
+      "version": "24.14.0"
     }
   },
   "postCreateCommand": "/bin/bash .devcontainer/init.sh",

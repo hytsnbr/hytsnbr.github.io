@@ -82,8 +82,8 @@ importers:
         specifier: 1.8.1
         version: 1.8.1
       postcss-sort-media-queries:
-        specifier: 5.2.0
-        version: 5.2.0(postcss@8.5.8)
+        specifier: 6.1.0
+        version: 6.1.0(postcss@8.5.8)
       prettier:
         specifier: 3.8.1
         version: 3.8.1
@@ -2085,11 +2085,11 @@ packages:
     resolution: {integrity: sha512-orRsuYpJVw8LdAwqqLykBj9ecS5/cRHlI5+nvTo8LcCKmzDmqVORXtOIYEEQuL9D4BxtA1lm5isAqzQZCoQ6Eg==}
     engines: {node: '>=4'}
 
-  postcss-sort-media-queries@5.2.0:
-    resolution: {integrity: sha512-AZ5fDMLD8SldlAYlvi8NIqo0+Z8xnXU2ia0jxmuhxAU+Lqt9K+AlmLNJ/zWEnE9x+Zx3qL3+1K20ATgNOr3fAA==}
-    engines: {node: '>=14.0.0'}
+  postcss-sort-media-queries@6.1.0:
+    resolution: {integrity: sha512-kxMvbeXdSrXK7bFOPUb5n1lu9m4OhwK9oKfQO0nzUWAyw7671gt2RPNI5GKJG69MT+eLyav4MVjmgnBfzBJLww==}
+    engines: {node: '>=22.0.0'}
     peerDependencies:
-      postcss: ^8.4.23
+      postcss: ^8.5.6
 
   postcss-value-parser@4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
@@ -2283,9 +2283,9 @@ packages:
     resolution: {integrity: sha512-bSiSngZ/jWeX93BqeIAbImyTbEihizcwNjFoRUIY/T1wWQsfsm2Vw1agPKylXvQTU7iASGdHhyqRlqQzfz+Htg==}
     engines: {node: '>=18'}
 
-  sort-css-media-queries@2.2.0:
-    resolution: {integrity: sha512-0xtkGhWCC9MGt/EzgnvbbbKhqWjl1+/rncmhTh5qCpbYguXh6S/qwePfv/JQ8jePXXmqingylxoC49pCkSPIbA==}
-    engines: {node: '>= 6.3.0'}
+  sort-css-media-queries@3.0.1:
+    resolution: {integrity: sha512-7yMdW7AzHlWt7CLGgA6JW0rdZg/sURDVRuqHRtRjJwte96i41ksEo7BzYTqO/DLd3QfYnx7mwEdJZ+yYn1w6ag==}
+    engines: {node: '>= 16'}
 
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
@@ -4538,10 +4538,10 @@ snapshots:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
 
-  postcss-sort-media-queries@5.2.0(postcss@8.5.8):
+  postcss-sort-media-queries@6.1.0(postcss@8.5.8):
     dependencies:
       postcss: 8.5.8
-      sort-css-media-queries: 2.2.0
+      sort-css-media-queries: 3.0.1
 
   postcss-value-parser@4.2.0: {}
 
@@ -4677,7 +4677,7 @@ snapshots:
       ansi-styles: 6.2.1
       is-fullwidth-code-point: 5.0.0
 
-  sort-css-media-queries@2.2.0: {}
+  sort-css-media-queries@3.0.1: {}
 
   source-map-js@1.2.1: {}
 

@@ -82,8 +82,8 @@ importers:
         specifier: 1.8.1
         version: 1.8.1
       postcss-sort-media-queries:
-        specifier: 6.1.0
-        version: 6.1.0(postcss@8.5.8)
+        specifier: 6.3.2
+        version: 6.3.2(nanoid@3.3.11)(postcss@8.5.8)
       prettier:
         specifier: 3.8.1
         version: 3.8.1
@@ -2092,10 +2092,11 @@ packages:
     resolution: {integrity: sha512-orRsuYpJVw8LdAwqqLykBj9ecS5/cRHlI5+nvTo8LcCKmzDmqVORXtOIYEEQuL9D4BxtA1lm5isAqzQZCoQ6Eg==}
     engines: {node: '>=4'}
 
-  postcss-sort-media-queries@6.1.0:
-    resolution: {integrity: sha512-kxMvbeXdSrXK7bFOPUb5n1lu9m4OhwK9oKfQO0nzUWAyw7671gt2RPNI5GKJG69MT+eLyav4MVjmgnBfzBJLww==}
-    engines: {node: '>=22.0.0'}
+  postcss-sort-media-queries@6.3.2:
+    resolution: {integrity: sha512-9sGECLA48xCvP47V+VrLTzAj0xfNegM3cfwlyauRgub3MRVMqiv46uMXRJpYLJiqWlc+JViLQfV8qJIJw6fLAA==}
+    engines: {node: '>=20.0.0'}
     peerDependencies:
+      nanoid: ^5.1.6
       postcss: ^8.5.6
 
   postcss-value-parser@4.2.0:
@@ -4556,8 +4557,9 @@ snapshots:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
 
-  postcss-sort-media-queries@6.1.0(postcss@8.5.8):
+  postcss-sort-media-queries@6.3.2(nanoid@3.3.11)(postcss@8.5.8):
     dependencies:
+      nanoid: 3.3.11
       postcss: 8.5.8
       sort-css-media-queries: 3.0.1
 

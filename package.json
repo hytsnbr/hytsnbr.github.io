@@ -42,7 +42,7 @@
     "lint-staged": "16.4.0",
     "postcss": "8.5.8",
     "postcss-html": "1.8.1",
-    "postcss-sort-media-queries": "6.3.2",
+    "postcss-sort-media-queries": "6.3.3",
     "prettier": "3.8.1",
     "prettier-plugin-tailwindcss": "0.7.2",
     "remixicon": "4.9.1",

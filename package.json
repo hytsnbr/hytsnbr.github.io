@@ -46,7 +46,7 @@
     "prettier": "3.8.1",
     "prettier-plugin-tailwindcss": "0.7.2",
     "remixicon": "4.9.1",
-    "sass": "1.98.0",
+    "sass": "1.99.0",
     "stylelint": "17.6.0",
     "stylelint-config-recommended-scss": "17.0.0",
     "stylelint-config-recommended-vue": "1.6.1",

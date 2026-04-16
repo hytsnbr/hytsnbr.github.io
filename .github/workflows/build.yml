@@ -34,7 +34,7 @@ jobs:
         run: pnpm build
 
       - name: Cache Build Files
-        uses: actions/cache/save@668228422ae6a00e4ad889ee87cd7109ec5666a7 # v5.0.4
+        uses: actions/cache/save@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
         with:
           # OS間共有の有効化
           enableCrossOsArchive: true

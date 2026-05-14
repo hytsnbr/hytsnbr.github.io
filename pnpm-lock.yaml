@@ -82,8 +82,8 @@ importers:
         specifier: 1.8.1
         version: 1.8.1
       postcss-sort-media-queries:
-        specifier: 6.6.0
-        version: 6.6.0(postcss@8.5.14)
+        specifier: 6.6.1
+        version: 6.6.1(postcss@8.5.14)
       prettier:
         specifier: 3.8.3
         version: 3.8.3
@@ -2069,8 +2069,8 @@ packages:
     resolution: {integrity: sha512-orRsuYpJVw8LdAwqqLykBj9ecS5/cRHlI5+nvTo8LcCKmzDmqVORXtOIYEEQuL9D4BxtA1lm5isAqzQZCoQ6Eg==}
     engines: {node: '>=4'}
 
-  postcss-sort-media-queries@6.6.0:
-    resolution: {integrity: sha512-I0NSS5XjoeoOniKhSFw/iw/3n7V8b88Y452OlYQDUXHaPb9OMee7vz0SAYCO3pg6dUskUVzKPMPHDX6Xjx6Dsg==}
+  postcss-sort-media-queries@6.6.1:
+    resolution: {integrity: sha512-RUxLyxyG//HZ9Ax07u7vNgufwcnsqWx/IGafKzpsNgGulsxsKjNb8KV3Znzc0u2RLH3D3MCzwwSj16dVyvL7pA==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       postcss: ^8.5.6
@@ -4504,7 +4504,7 @@ snapshots:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
 
-  postcss-sort-media-queries@6.6.0(postcss@8.5.14):
+  postcss-sort-media-queries@6.6.1(postcss@8.5.14):
     dependencies:
       postcss: 8.5.14
       sort-css-media-queries: 3.0.5

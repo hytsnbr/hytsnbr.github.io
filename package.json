@@ -27,7 +27,7 @@
     "@types/node": "25.8.0",
     "@typescript-eslint/eslint-plugin": "8.59.3",
     "@typescript-eslint/parser": "8.59.3",
-    "@vitejs/plugin-vue": "6.0.6",
+    "@vitejs/plugin-vue": "6.0.7",
     "@vue/eslint-config-prettier": "10.2.0",
     "@vue/eslint-config-typescript": "13.0.0",
     "autoprefixer": "10.5.0",

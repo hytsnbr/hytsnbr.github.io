@@ -30,7 +30,7 @@
     "@vitejs/plugin-vue": "6.0.7",
     "@vue/eslint-config-prettier": "10.2.0",
     "@vue/eslint-config-typescript": "13.0.0",
-    "autoprefixer": "10.5.0",
+    "autoprefixer": "10.5.1",
     "css-declaration-sorter": "7.4.0",
     "daisyui": "5.5.23",
     "eslint": "9.39.4",

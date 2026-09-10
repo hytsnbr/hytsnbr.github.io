@@ -1,57 +1,40 @@
-import vue from "eslint-plugin-vue";
-import typescriptEslint from "@typescript-eslint/eslint-plugin";
-import tailwindcss from "eslint-plugin-tailwindcss";
-import globals from "globals";
-import path from "node:path";
-import prettier from "prettier";
-import { fileURLToPath } from "node:url";
 import js from "@eslint/js";
-import { FlatCompat } from "@eslint/eslintrc";
+import vueTsEslintConfig from "@vue/eslint-config-typescript";
+import eslintConfigPrettier from "eslint-config-prettier";
+import tailwindcss from "eslint-plugin-tailwindcss";
+import pluginVue from "eslint-plugin-vue";
+import globals from "globals";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const compat = new FlatCompat({
-    baseDirectory: __dirname,
-    recommendedConfig: js.configs.recommended,
-    allConfig: js.configs.all
-});
+export default [
+  {
+    ignores: ["dist/**"],
+  },
 
-export default [{
-    ignores: ["**/*.config.ts"],
-}, ...compat.extends(
-    "eslint:recommended",
-    "plugin:vue/vue3-recommended",
-    "@vue/typescript/recommended",
-    "plugin:tailwindcss/recommended",
-    "prettier",
-), {
-    plugins: {
-        vue,
-        "@typescript-eslint": typescriptEslint,
-        tailwindcss,
-        prettier,
-    },
+  js.configs.recommended,
+  ...pluginVue.configs["flat/recommended"],
+  ...vueTsEslintConfig(),
+  ...tailwindcss.configs["flat/recommended"],
+  eslintConfigPrettier,
 
+  {
     languageOptions: {
-        globals: {
-            ...globals.browser,
-            ...globals.node,
-        },
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+      },
 
-        ecmaVersion: 2024,
-        sourceType: "module",
+      ecmaVersion: 2024,
+      sourceType: "module",
 
-        parserOptions: {
-            project: "./tsconfig.json",
-            warnOnUnsupportedTypeScriptVersion: false,
-        },
+      parserOptions: {
+        project: "./tsconfig.json",
+        warnOnUnsupportedTypeScriptVersion: false,
+      },
     },
 
     rules: {
-        "vue/component-name-in-template-casing": ["error", "PascalCase"],
-        "tailwindcss/no-custom-classname": ["off"],
+      "vue/component-name-in-template-casing": ["error", "PascalCase"],
+      "tailwindcss/no-custom-classname": ["off"],
     },
-}, ...compat.extends("plugin:@typescript-eslint/recommended-requiring-type-checking").map(config => ({
-    ...config,
-    files: ["**/*.config.{js,ts}"],
-}))];
+  },
+];
